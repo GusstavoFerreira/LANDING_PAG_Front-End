@@ -1,0 +1,26 @@
+
+:root{
+    --blue:#1830d9;
+    --branco:#e6e6e6;
+    --gap:3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--azul);
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}

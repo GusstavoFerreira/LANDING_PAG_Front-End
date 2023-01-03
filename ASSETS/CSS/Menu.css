@@ -1,0 +1,57 @@
+.Menu {
+    background: var(--branco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid rgb(160, 160, 160);
+    z-index: 1;
+}
+
+.Menu-Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Menu h1{
+    font-size: 2.3rem;
+    color: blue;
+}
+
+.Menu h1 a{
+    color: inherit;
+}
+
+
+.Menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.Menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-family: 'Montserrat', sem serifa;
+    color: #3f3d56;
+    position: relative;
+}
+
+
+.Menu ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    height: 0.2rem;
+    width: 0;
+    background: #6c63ff;
+    transition: all 300ms ease-in-out;
+}
+.Menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
